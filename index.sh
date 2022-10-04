@@ -23,8 +23,8 @@ echo "$info" >> rendered.txt
 echo "$info"
 echo
 
-# git add rendered.txt
-# git commit -m "$info :four_leaf_clover:"
-# git push -u origin main 
+git add rendered.txt
+git commit -m "$info :four_leaf_clover:"
+git push -u origin main 
 
 cd -
