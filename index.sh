@@ -1,5 +1,8 @@
 
-info="Activity on $(date)"
+# put current date as yyyy-mm-dd HH:MM:SS in $date
+current_date=$(date '+%Y-%m-%d %H:%M:%S')
+
+info="Activity on $(date '+%Y-%m-%d %H:%M:%S')"
 os="$(uname -s)"
 
 echo "Identifying Operating System: $os"
@@ -20,9 +23,8 @@ echo "$info" >> rendered.txt
 echo "$info"
 echo
 
-# Shipping
-git add output.txt
-git commit -m "$info :four_leaf_clover:"
-git push origin main 
+# git add rendered.txt
+# git commit -m "$info :four_leaf_clover:"
+# git push -u origin main 
 
 cd -
