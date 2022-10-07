@@ -2,7 +2,7 @@
 # put current date as yyyy-mm-dd HH:MM:SS in $date
 current_date=$(date '+%Y-%m-%d %H:%M:%S')
 
-info="Activity on $(date '+%Y-%m-%d %H:%M:%S')"
+info="Activity on $current_date"
 os="$(uname -s)"
 
 echo "Identifying Operating System: $os"
